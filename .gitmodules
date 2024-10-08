@@ -1,0 +1,3 @@
+[submodule "Assets/_SimulatorBase/BioCrowd-GS"]
+	path = Assets/_SimulatorBase/BioCrowd-GS
+	url = https://github.com/EstevaoST/BioCrowds-GS.git

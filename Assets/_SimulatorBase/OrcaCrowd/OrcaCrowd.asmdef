@@ -1,0 +1,16 @@
+{
+    "name": "OrcaCrowd",
+    "rootNamespace": "",
+    "references": [
+        "GUID:3ca5b61feaf9a5041b2c7caafda74caa"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
