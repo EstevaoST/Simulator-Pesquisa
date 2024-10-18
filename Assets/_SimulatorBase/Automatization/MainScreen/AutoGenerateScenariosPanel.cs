@@ -34,6 +34,9 @@ public class AutoGenerateScenariosPanel : MonoBehaviour
     public string savePathKey = "savePathKey";
     public string storageScheme = "autoScenario";
 
+    [Header("Output")]
+    public TMP_Text outputMessageText;
+
     // Unity events
     private void OnEnable()
     {
@@ -108,9 +111,8 @@ public class AutoGenerateScenariosPanel : MonoBehaviour
 
             GenerateCaseFile(i, roomWidth, roomLength, exitWidth, obstacularity);
         }
-        // to do
-        // criar output falando de sucesso
-
+        
+        DisplaySuccessMessage($"Successfully generated {qty} files.");
         Debug.Log($"Generated {qty} files");
     }
     private void GenerateDiscreetCases()
@@ -150,8 +152,7 @@ public class AutoGenerateScenariosPanel : MonoBehaviour
                 break;
             }
         }        
-        // to do
-        // criar output falando de sucesso
+        DisplaySuccessMessage($"Successfully generated {qty} files.");
 
         Debug.Log($"Generated {nCase} files");
     }    
@@ -197,4 +198,16 @@ public class AutoGenerateScenariosPanel : MonoBehaviour
 
         return values;
     }
+
+    private void DisplaySuccessMessage(string message)
+{
+    if (outputMessageText != null)
+    {
+        outputMessageText.text = message;
+    }
+    else
+    {
+        Debug.Log(message);
+    }
+}
 }
